@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microposts</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Microposts - Simple Front End for JSON SERVER</a>
+        </div>
+    </nav>
+    <div class="container posts-container">
+        <div class="card card-body card-form mb-4 form-container">
+            <h1>Say Something</h1>
+            <p class="lead">What's on your mind</p>
+            <div class="form-group form">
+                <input type="text" id="title" class="form-control" placeholder="Post Title">
+            </div>
+            <div class="form-group mt-2">
+                <textarea id="body" class="form-control" placeholder="Post Body"></textarea>
+            </div>
+            <input type="hidden" id="id" value="">
+            <button class="post-submit btn btn-primary btn-block mt-2">Post It</button>
+        </div>
+        <div id="posts"></div>
+    </div>
+    <footer class="mt-5 p-3 text-center bg-light">
+        Microposts
+    </footer>
+    <script type="module" src="/app.js"></script>
+</body>
+
+</html>
